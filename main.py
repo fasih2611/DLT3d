@@ -4,8 +4,8 @@ import socket
 
 
 def send_to_esp32(message):
-    esp_ip = '192.168.176.251'  # Example IP
-    esp_port = 12345  # Example port
+    esp_ip = '192.168.176.251'  
+    esp_port = 12345 
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.connect((esp_ip, esp_port))
